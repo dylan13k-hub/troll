@@ -1,18 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Petit test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon labo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 100px;
+            background: #111;
+            color: white;
+        }
+
+        button {
+            display: block;
+            width: 280px;
+            margin: 20px auto;
+            padding: 15px;
+            font-size: 18px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-<body style="text-align:center; margin-top:100px;">
 
-    <h1>❤️ Clique ici ❤️</h1>
+<body>
 
-    <button onclick="document.getElementById('message').textContent='🖕 SURPRISE ! 😂'">
-        Cliquer
+    <h1>🧪 Mon laboratoire</h1>
+    <p>Choisis une expérience :</p>
+
+    <button onclick="location.href='prank.html'">
+        ❤️ Prank
     </button>
 
-    <h2 id="message"></h2>
+    <button onclick="location.href='labo.html'">
+        🔐 Labo de connexion
+    </button>
 
 </body>
 </html>
