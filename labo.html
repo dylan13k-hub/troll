@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Labo cybersécurité</title>
+</head>
+<body>
+  <h1>🔐 Labo de connexion</h1>
+
+  <input id="user" placeholder="Nom d'utilisateur">
+  <br><br>
+
+  <input id="pass" type="password" placeholder="Mot de passe de test">
+  <br><br>
+
+  <button onclick="tester()">Se connecter</button>
+
+  <p id="result"></p>
+
+  <script>
+    function tester() {
+      const user = document.getElementById("user").value;
+      const pass = document.getElementById("pass").value;
+
+      document.getElementById("result").textContent =
+        "Test effectué pour : " + user +
+        " — mot de passe reçu localement : " + pass;
+    }
+  </script>
+</body>
+</html>
